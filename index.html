@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .laps {
+            margin-top: 20px;
+        }
+        .lap {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="stopwatch">
+        <h1 id="displayTime">00:00:00</h1>
+        <div class="buttons">
+            <img src="start.png" id="playPauseButton" onclick="toggleWatch()">
+            <img class="reset" src="reset.jpg" onclick="watchReset()">
+            <img class="reset" src="images.png" onclick="recordLap()">
+        </div>
+        <div class="laps" id="lapsContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
